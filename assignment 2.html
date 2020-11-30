@@ -1,0 +1,88 @@
+<head>
+<link 
+rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+.menubox1{
+width:100%; height:auto;
+color:#fff; font-size:2.0em;
+padding:10px; 
+background:#000; 
+}
+
+.hamburger{
+display:inline;
+}
+}
+
+</style>
+
+</head>
+<div class="menubox1">
+<i class="fa fa-bars hamburger"
+aria-hidden="true"
+onclick="alert('Hello')"
+></i>
+</div>
+
+
+<div  
+style="width:100%;
+height:50px;margin-top:10px;
+text-align:center;
+padding:20px;
+cursor:cross;"
+>
+<label>Enter First number</label><br>
+<input type="text" id="num1" size="20">
+<br><br>
+<p style="font-weight:bolder; font-size:20px; margin-top:-6px;">+</p>
+<label>Enter Last number</label><br>
+<input type="text" id="num2" size="20">
+<br><br>
+</div>
+
+
+<div
+style="width:15%;
+height:20px;margin-top:50px;
+text-align:center;
+padding:10px;
+cursor:pointer;
+padding-bottom:30px;
+padding-right:30px;
+border:1px solid blue"
+>
+<p onclick="num();">Add</p>
+</div>
+
+<div 
+style="width:30%;
+margin-left:190px;
+height:15px;
+text-align:center; font-size:2em;
+padding:20px;margin-top:30px; border:solid 1px purple;" id="display">
+<script>
+//document.getElementById("display").innerHTML=typeof b;
+//var b=("hiii")
+function num()
+{
+//alert("am working")
+var n1=document.getElementById("num1").value;
+var n2=document.getElementById("num2").value;
+var n3=parseInt(n1)+parseInt(n2);
+document.getElementById("display").innerHTML=n3;
+}
+
+</script>
+</div>
+
+<center>
+<div>
+<a href="assignment.html" style="font-weight:bolder; font-size:2.0em; background:#0619FC; color:magenta; ">Back</a>
+</div>
+ </center>
